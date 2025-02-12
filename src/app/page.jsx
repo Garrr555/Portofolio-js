@@ -2,6 +2,7 @@
 
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { FiDownload } from "react-icons/fi";
@@ -57,8 +58,8 @@ export default function Home() {
               {content[language].description}
             </p>
 
-            <div className="flex flex-col xl:flex-row gap-8 mb-8">
-              <div className="flex flex-wrap xl:flex-row justify-center items-center gap-9 xl:justify-start">
+            <div className="flex flex-col xl:flex-none gap-8 mb-8">
+              <div className="flex flex-wrap xl:flex-none justify-center items-center gap-9 xl:justify-start">
                 <Button
                   variant="outline"
                   size="lg"
@@ -92,6 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Stats></Stats>
     </section>
   );
 }
