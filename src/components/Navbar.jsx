@@ -1,6 +1,6 @@
 "use client";
 
-import links from "@/lib/links";
+import links from "@/data/links";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <nav className="flex gap-8">
       {links.map((link, i) => {
-        const IconComponent = link.logo
+        const IconComponent = link.logo;
         return (
           <Link
             href={link.path}

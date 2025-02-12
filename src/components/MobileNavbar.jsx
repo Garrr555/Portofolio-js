@@ -1,7 +1,7 @@
 "use client";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import links from "@/lib/links";
+import links from "@/data/links";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CiMenuFries } from "react-icons/ci";
@@ -29,8 +29,7 @@ export default function MobileNavbar() {
                 href={link.path}
                 key={i}
                 className={`${
-                  link.path === pathname &&
-                  "text-accent"
+                  link.path === pathname && "text-accent"
                 } text-xl capitalize hover:text-accent transition-all flex items-center gap-2`}
               >
                 <IconComponent className="text-2xl" />{" "}
