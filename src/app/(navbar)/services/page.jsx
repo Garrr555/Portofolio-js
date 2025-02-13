@@ -24,13 +24,18 @@ export default function Services() {
                 className="flex-1 flex flex-col justify-center gap-6 group"
               >
                 <div className="flex w-full justify-between items-center">
-                  <div>{service.num}</div>
-                  <Link href={service.href}>
-                    <BsArrowDownRight />
+                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                    {service.num}
+                  </div>
+                  <Link
+                    href={service.href}
+                    className="w-[70px] h-[70px] rounded-full flex justify-center items-center transition-all duration-500 hover:-rotate-45 bg-white group-hover:bg-accent"
+                  >
+                    <BsArrowDownRight className="text-primary text-3xl"/>
                   </Link>
                 </div>
-                <h2>{service.title}</h2>
-                <p>{service.description}</p>
+                <h2 className="text-[42px] leading-none text-white font-bold group-hover:text-accent transition-all duration-500">{service.title}</h2>
+                <p className="text-white/60 group-hover:text-white transition-all duration-500">{service.description}</p>
                 <div className="w-full border-b border-white/20"></div>
               </div>
             );
