@@ -5,11 +5,12 @@ import {
   FaTwitter,
   FaInstagram,
   FaTelegram,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const socials = [
   { icon: <FaGithub />, path: "" },
-  { icon: <FaYoutube />, path: "" },
+  { icon: <FaWhatsapp />, path: "" },
   { icon: <FaInstagram />, path: "" },
   { icon: <FaLinkedin />, path: "" },
   { icon: <FaTelegram />, path: "" },
