@@ -102,7 +102,7 @@ export default function Work() {
                         <Image
                           src={project.image}
                           fill
-                          alt=""
+                          alt={project.title}
                           className="object-cover"
                         ></Image>
                       </div>
