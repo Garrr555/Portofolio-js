@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col items-center justify-between xl:flex-row xl:pt-8 xl:pb-24">
+        <div className="flex flex-col items-center justify-between xl:flex-row xl:pt-8 xl:pb-8">
           <div
             className={`order-2 xl:order-none text-center xl:text-left transition-opacity duration-500 ${
               isTransitioning ? "opacity-0" : "opacity-100"

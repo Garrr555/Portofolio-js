@@ -66,7 +66,7 @@ export const experience = {
 
 export const education = {
   icon: "/asset/resume/badge.svg",
-  title: "My Experience",
+  title: "My Education",
   description:
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto quia voluptatibus accusamus deserunt itaque inventore ex.",
   items: [
