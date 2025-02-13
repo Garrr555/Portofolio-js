@@ -21,7 +21,7 @@ export const about = {
     { fieldName: "Nationality", fieldValue: "Indonesian" },
     { fieldName: "Email", fieldValue: "mohammadtegaribrahim@gmail.com" },
     { fieldName: "Freelance", fieldValue: "Available" },
-    { fieldName: "Languages", fieldValue: "English, Indonesian" },
+    { fieldName: "Languages", fieldValue: "English,Indonesian" },
   ],
 };
 
@@ -32,7 +32,7 @@ export const experience = {
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto quia voluptatibus accusamus deserunt itaque inventore ex.",
   items: [
     {
-      company: "Telkom University Purwokerto",
+      company: "Telkom University",
       position: "Student",
       duration: "2021 - 2025",
     },

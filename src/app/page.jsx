@@ -93,7 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Stats></Stats>
+      <Stats language={language}></Stats>
     </section>
   );
 }
