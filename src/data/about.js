@@ -5,9 +5,17 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
+  FaBootstrap,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiFirebase,
+} from "react-icons/si";
+
+import { RiFileWord2Fill, RiFilePpt2Fill } from "react-icons/ri";
 
 export const about = {
   title: "About Me",
@@ -111,6 +119,10 @@ export const skills = {
       name: "JavaScript",
     },
     {
+      icon: <SiTypescript />,
+      name: "TypeScript",
+    },
+    {
       icon: <FaReact />,
       name: "React.js",
     },
@@ -127,8 +139,20 @@ export const skills = {
       name: "Tailwind",
     },
     {
-      icon: <FaFigma />,
-      name: "Figma",
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
+      icon: <RiFileWord2Fill />,
+      name: "Word",
+    },
+    {
+      icon: <RiFilePpt2Fill />,
+      name: "PPT",
     },
   ],
 };

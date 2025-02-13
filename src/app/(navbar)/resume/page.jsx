@@ -101,41 +101,51 @@ export default function Resume() {
                     {skills.description}
                   </p>
                 </div>
-                <ul className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
-                  {skills.skillList.map((skill, i) => {
-                    return (
-                      <li key={i}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex items-center justify-center group ">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <div>{skill.name}</div>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    );
-                  })}
-                </ul>
+                <ScrollArea className="xl:h-[350px] h-[330px]">
+                  <ul className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
+                    {skills.skillList.map((skill, i) => {
+                      return (
+                        <li key={i}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex items-center justify-center group ">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <div>{skill.name}</div>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
 
-            <TabsContent value="about" className="w-full text-center xl:text-left">
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left"
+            >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
-                  {about.info.map((item,i)=>{
-                    return(
-                      <li key={i} className="flex items-center justify-center gap-4 xl:justify-start">
+                  {about.info.map((item, i) => {
+                    return (
+                      <li
+                        key={i}
+                        className="flex items-center justify-center gap-4 xl:justify-start"
+                      >
                         <span className="text-white/60">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>
-                    )
+                    );
                   })}
                 </ul>
               </div>
