@@ -20,19 +20,28 @@ export default function Home() {
     }, 300); // Durasi animasi 500ms
   };
 
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/cv/Mohammad Tegar Ibrahim(JS).pdf"; // Pastikan file cv.pdf ada di folder public
+    link.download = "Mohammad_Tegar_Ibrahim_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const content = {
     id: {
-      role: "Pengembang Perangkat Lunak",
+      role: "Pengembang Front-end",
       greeting: "Halo, Saya",
       description:
-        "Saya ahli dalam membuat pengalaman digital yang elegan dan saya mahir dalam berbagai bahasa pemrograman dan teknologi.",
+        "Saya seorang mahasiswa jurusan informatika dari Telkom University yang senang belajar dan memiliki rasa ingin tahu yang tinggi. Saya suka mempelajari hal-hal baru melalui bootcamp online. Saya sering mengerjakan proyek-proyek selama kuliah, misalnya untuk ujian tengah semester, tugas akhir semester atau proyek mandiri. Untuk sekarang saya sudah menguasai React.Js dan Next.Js untuk menambah ilmu dibidang front-end. karena beberapa hal tersebut saya mempunyai kemampuan komunikasi yang baik dan dapat bekerja dalam tim maupun individu.",
       buttonText: "Inggris",
     },
     en: {
-      role: "Software Developer",
+      role: "Front-end Developer",
       greeting: "Hello, I'm",
       description:
-        "I specialize in crafting elegant digital experiences and am proficient in various programming languages and technologies.",
+        "I am an Informatics student at Telkom University who enjoys learning and has a strong curiosity. I love exploring new things through online bootcamps. I often work on projects during my studies, such as mid-term exams, final semester assignments, or independent projects. Currently, I have mastered React.js and Next.js to enhance my knowledge in the front-end field. Due to these experiences, I have good communication skills and can work both in a team and independently.",
       buttonText: "Indonesian",
     },
   };
@@ -63,6 +72,7 @@ export default function Home() {
                 <Button
                   variant="outline"
                   size="lg"
+                  onClick={handleDownloadCV}
                   className="uppercase flex items-center gap-2 xl:w-[200px]"
                 >
                   <span className="hidden xl:flex">Download cv</span>

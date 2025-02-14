@@ -36,8 +36,9 @@ export default function Contact() {
             >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Debitis, necessitatibus saepe? Debitis, odit consequuntur!
+                I'm always open to new collaborations and exciting projects. If
+                you have an idea or would like to discuss something, feel free
+                to reach out!
               </p>
               <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                 <Input

@@ -1,32 +1,32 @@
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Front-end Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione deleniti incidunt quia assumenda tenetur, enim nesciunt!",
-    href: "/",
+      "Building responsive and interactive user interfaces using HTML, CSS, and JavaScript to create optimal digital experiences.",
+    href: "/contact",
   },
   {
     num: "02",
-    title: "Web Development",
+    title: "React & Next.js Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione deleniti incidunt quia assumenda tenetur, enim nesciunt!",
-    href: "/",
+      "Developing modern web applications with React and Next.js, including Server-Side Rendering (SSR) and Static Site Generation (SSG) for high performance.",
+    href: "/contact",
   },
   {
     num: "03",
-    title: "Web Development",
+    title: "UI/UX Implementation",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione deleniti incidunt quia assumenda tenetur, enim nesciunt!",
-    href: "/",
+      "Translating UI/UX designs into clean and efficient code with a mobile-first approach and strong accessibility considerations.",
+    href: "/contact",
   },
   {
     num: "04",
-    title: "Web Development",
+    title: "Performance Optimization",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione deleniti incidunt quia assumenda tenetur, enim nesciunt!",
-    href: "/",
+      "Optimizing website performance with lazy loading, code splitting, caching, and best practices to enhance speed and user experience.",
+    href: "/contact",
   },
 ];
 
-export default services
+export default services;

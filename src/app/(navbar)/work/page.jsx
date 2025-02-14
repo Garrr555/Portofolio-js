@@ -5,6 +5,7 @@ import { Swiper, swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import {FiLogIn} from 'react-icons/fi'
 
 import {
   Tooltip,
@@ -70,6 +71,21 @@ export default function Work() {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+
+                <div className={`${project.live2 ? "" : "hidden"}`}>
+                  <Link href={project.liveX}>
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex items-center justify-center group">
+                          <FiLogIn className="text-3xl text-white group-hover:text-accent" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>Login Project</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
+                  </Link>
+                </div>
 
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>

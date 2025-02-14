@@ -20,7 +20,7 @@ import { RiFileWord2Fill, RiFilePpt2Fill } from "react-icons/ri";
 export const about = {
   title: "About Me",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto quia voluptatibus accusamus deserunt itaque inventore ex.",
+    "I am a passionate front-end developer with a strong foundation in web development technologies. I specialize in creating responsive and dynamic web applications using React.js and Next.js. With a keen interest in continuous learning, I actively enhance my skills through online bootcamps and hands-on projects. My experience includes freelance and internship roles, where I have honed my ability to work both independently and within a team.",
   info: [
     { fieldName: "Name", fieldValue: "Mohammad Tegar Ibrahim" },
     { fieldName: "Phone", fieldValue: "(+62) 812 2914 8974" },
@@ -37,11 +37,11 @@ export const experience = {
   icon: "/asset/resume/badge.svg",
   title: "My Experience",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto quia voluptatibus accusamus deserunt itaque inventore ex.",
+    "I have experience in front-end development, specializing in building interactive and responsive websites using React.js and Next.js. Throughout my journey, I have worked on various projects, including e-commerce platforms, blogs, portfolio websites, and web applications. My expertise includes implementing modern UI/UX principles, optimizing performance, and ensuring seamless user experiences.",
   items: [
     {
       company: "Telkom University",
-      position: "Student",
+      position: "Informatics Student",
       duration: "2021 - 2025",
     },
     {
@@ -55,17 +55,17 @@ export const experience = {
       duration: "2023 - 2024",
     },
     {
-      company: "E-commerce",
+      company: "Blog & News Website",
       position: "Freelance Web Developer",
-      duration: "2023 - 2024",
+      duration: "2024 - 2025",
     },
     {
-      company: "E-commerce",
+      company: "Web Application",
       position: "Freelance Web Developer",
-      duration: "2023 - 2024",
+      duration: "2024 - 2025",
     },
     {
-      company: "E-commerce",
+      company: "Portfolio Website",
       position: "Freelance Web Developer",
       duration: "2023 - 2024",
     },
@@ -76,7 +76,7 @@ export const education = {
   icon: "/asset/resume/badge.svg",
   title: "My Education",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto quia voluptatibus accusamus deserunt itaque inventore ex.",
+    "I have pursued various educational programs to enhance my skills in web development, specializing in front-end technologies like React.js and Next.js. Through bootcamps and online courses, I have gained hands-on experience in building scalable web applications and improving user experience.",
   items: [
     {
       institution: "Kampus Merdeka",
@@ -104,7 +104,7 @@ export const education = {
 export const skills = {
   title: "My Skills",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias iusto quia voluptatibus accusamus deserunt itaque inventore ex.",
+    "As a front-end developer, I have expertise in modern web technologies, specializing in building responsive, high-performance applications. I am proficient in JavaScript frameworks like React.js and Next.js, and I leverage tools such as Tailwind CSS and Bootstrap for efficient UI development. Additionally, I have experience with backend technologies like Node.js and Firebase for seamless integration.",
   skillList: [
     {
       icon: <FaHtml5 />,
