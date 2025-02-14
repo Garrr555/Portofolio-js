@@ -98,6 +98,16 @@ export const education = {
       degree: "Front-end Track",
       duration: "2023",
     },
+    {
+      institution: "Online Course",
+      degree: "React.js Track",
+      duration: "2023",
+    },
+    {
+      institution: "Online Course",
+      degree: "Fullstack with Next.js Track",
+      duration: "2023",
+    },
   ],
 };
 

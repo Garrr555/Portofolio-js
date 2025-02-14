@@ -16,6 +16,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 import { info } from "@/data/info";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -89,9 +90,12 @@ export default function Contact() {
               {info.map((item, i) => {
                 return (
                   <li key={i} className="flex items-center gap-6">
-                    <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-xl flex items-center justify-center">
-                      <div className="text-[28px]">{item.icon}</div>
-                    </div>
+                    <Link href={item.path}>
+                      <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-xl flex items-center justify-center">
+                        <div className="text-[28px]">{item.icon}</div>
+                      </div>
+                    </Link>
+
                     <div className="flex-1">
                       <p className="text-white/60">{item.title}</p>
                       <h3 className="text-xl">{item.description}</h3>
