@@ -6,6 +6,7 @@ import {
   FaFigma,
   FaNodeJs,
   FaBootstrap,
+  FaVuejs,
 } from "react-icons/fa";
 
 import {
@@ -15,7 +16,12 @@ import {
   SiFirebase,
 } from "react-icons/si";
 
-import { RiFileWord2Fill, RiFilePpt2Fill } from "react-icons/ri";
+import {
+  RiFileWord2Fill,
+  RiFilePpt2Fill,
+  RiSupabaseFill,
+  RiFileExcelFill,
+} from "react-icons/ri";
 
 export const about = {
   title: "About Me",
@@ -24,12 +30,14 @@ export const about = {
   info: [
     { fieldName: "Name", fieldValue: "Mohammad Tegar Ibrahim" },
     { fieldName: "Phone", fieldValue: "(+62) 812 2914 8974" },
-    { fieldName: "Experience", fieldValue: "1 Year" },
+    { fieldName: "Experience", fieldValue: "2 Year" },
     { fieldName: "Instagram", fieldValue: "moh_garrr" },
     { fieldName: "Nationality", fieldValue: "Indonesian" },
     { fieldName: "Email", fieldValue: "mohammadtegaribrahim@gmail.com" },
     { fieldName: "Freelance", fieldValue: "Available" },
     { fieldName: "Languages", fieldValue: "English,Indonesian" },
+    { fieldName: "Github", fieldValue: "Garrr555" },
+    { fieldName: "Portofolio", fieldValue: "https://tegar-fe.vercel.app" },
   ],
 };
 
@@ -117,14 +125,6 @@ export const skills = {
     "As a front-end developer, I have expertise in modern web technologies, specializing in building responsive, high-performance applications. I am proficient in JavaScript frameworks like React.js and Next.js, and I leverage tools such as Tailwind CSS and Bootstrap for efficient UI development. Additionally, I have experience with backend technologies like Node.js and Firebase for seamless integration.",
   skillList: [
     {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "css 3",
-    },
-    {
       icon: <FaJs />,
       name: "JavaScript",
     },
@@ -141,16 +141,32 @@ export const skills = {
       name: "Next.js",
     },
     {
-      icon: <FaNodeJs />,
-      name: "Node.js",
-    },
-    {
       icon: <SiTailwindcss />,
       name: "Tailwind",
     },
     {
+      icon: <RiSupabaseFill />,
+      name: "Supabase",
+    },
+    {
+      icon: <FaVuejs />,
+      name: "Vue.js",
+    },
+    {
       icon: <FaBootstrap />,
       name: "Bootstrap",
+    },
+    {
+      icon: <FaHtml5 />,
+      name: "html 5",
+    },
+    {
+      icon: <FaCss3 />,
+      name: "css 3",
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "Node.js",
     },
     {
       icon: <SiFirebase />,
@@ -163,6 +179,14 @@ export const skills = {
     {
       icon: <RiFilePpt2Fill />,
       name: "PPT",
+    },
+    {
+      icon: <RiFileExcelFill />,
+      name: "Excel",
+    },
+    {
+      icon: <FaFigma />,
+      name: "Figma",
     },
   ],
 };

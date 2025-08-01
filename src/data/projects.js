@@ -6,10 +6,28 @@ export const projects = [
     description: "",
     stack: [
       { name: "Typescript" },
+      { name: "Next.js" },
+      { name: "Tailwind" },
+      { name: "Firebase" },
+      { name: "Leaflet" },
+    ],
+    image: "/project/10.png",
+    live: "https://margasana.vercel.app",
+    live2: true,
+    liveX:
+      "https://margasana.vercel.app/auth/login?callbackUrl=https%3A%2F%2Fmargasana.vercel.app%2Fmember%2Fprofile",
+    github: "https://github.com/Garrr555/margasana",
+  },
+  {
+    num: "02",
+    category: "Fullstack",
+    title: "Project 2",
+    description: "",
+    stack: [
+      { name: "Typescript" },
       { name: "React.js" },
       { name: "Next.js" },
       { name: "Tailwind" },
-      { name: "Node.js" },
       { name: "Firebase" },
     ],
     image: "/project/9.png",
@@ -19,9 +37,9 @@ export const projects = [
     github: "https://github.com/Garrr555/Nike",
   },
   {
-    num: "02",
+    num: "03",
     category: "Fullstack",
-    title: "Project 2",
+    title: "Project 3",
     description: "",
     stack: [
       { name: "Javascript" },
@@ -37,9 +55,9 @@ export const projects = [
     github: "https://github.com/BangOns/capstone-kelompok4",
   },
   {
-    num: "03",
+    num: "04",
     category: "Fullstack",
-    title: "Project 3",
+    title: "Project 4",
     description: "",
     stack: [
       { name: "Typescript" },
@@ -55,9 +73,9 @@ export const projects = [
     github: "https://github.com/Garrr555/mini-project",
   },
   {
-    num: "04",
+    num: "05",
     category: "Frontend",
-    title: "Project 4",
+    title: "Project 5",
     description: "",
     stack: [{ name: "Javascript" }, { name: "React.js" }, { name: "Tailwind" }],
     image: "/project/6.png",
@@ -67,9 +85,9 @@ export const projects = [
     github: "https://github.com/Garrr555/Web-Duwit",
   },
   {
-    num: "05",
+    num: "06",
     category: "Frontend",
-    title: "Project 5",
+    title: "Project 6",
     description: "",
     stack: [
       { name: "Html5" },
@@ -84,9 +102,9 @@ export const projects = [
     github: "",
   },
   {
-    num: "06",
+    num: "07",
     category: "Frontend",
-    title: "Project 6",
+    title: "Project 7",
     description: "",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/project/4.jpeg",
@@ -96,9 +114,9 @@ export const projects = [
     github: "",
   },
   {
-    num: "07",
+    num: "08",
     category: "Frontend",
-    title: "Project 7",
+    title: "Project 8",
     description: "",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/project/3.jpeg",
@@ -108,9 +126,9 @@ export const projects = [
     github: "",
   },
   {
-    num: "08",
+    num: "09",
     category: "Frontend",
-    title: "Project 8",
+    title: "Project 9",
     description: "",
     stack: [
       { name: "Html5" },
@@ -125,9 +143,9 @@ export const projects = [
     github: "",
   },
   {
-    num: "09",
+    num: "10",
     category: "Frontend",
-    title: "Project 9",
+    title: "Project 10",
     description: "",
     stack: [
       { name: "Html5" },

@@ -5,7 +5,7 @@ import { Swiper, swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-import {FiLogIn} from 'react-icons/fi'
+import { FiLogIn } from "react-icons/fi";
 
 import {
   Tooltip,
