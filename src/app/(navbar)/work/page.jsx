@@ -47,16 +47,16 @@ export default function Work() {
                 {project.category} Project
               </h2>
               <p className="text-white/60 ">{project.description}</p>
-              <ul className="flex gap-4">
+              <div className="flex gap-4 flex-wrap">
                 {project.stack.map((stack, i) => {
                   return (
-                    <li key={i} className="text-xl text-accent">
+                    <p key={i} className="text-xl text-accent text-start">
                       {stack.name}
                       {i !== project.stack.length - 1 && ","}
-                    </li>
+                    </p>
                   );
                 })}
-              </ul>
+              </div>
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4">
                 <Link href={project.live}>
