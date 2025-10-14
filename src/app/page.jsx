@@ -22,8 +22,8 @@ export default function Home() {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/cv/Mohammad Tegar Ibrahim CV.pdf"; // Pastikan file cv.pdf ada di folder public
-    link.download = "Mohammad_Tegar_Ibrahim_CV.pdf";
+    link.href = "/cv/Mohammad Tegar Ibrahim.pdf"; // Pastikan file cv.pdf ada di folder public
+    link.download = "Mohammad_Tegar_Ibrahim.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
