@@ -53,6 +53,11 @@ export const experience = {
       duration: "2021 - 2025",
     },
     {
+      company: "Makers Institue",
+      position: "Fullstack Developer Intern",
+      duration: "2025 - now",
+    },
+    {
       company: "Alterra Academy",
       position: "Front-end Developer Intern",
       duration: "Summer 2024",

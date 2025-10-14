@@ -27,6 +27,20 @@ const services = [
       "Optimizing website performance with lazy loading, code splitting, caching, and best practices to enhance speed and user experience.",
     href: "/contact",
   },
+  {
+    num: "05",
+    title: "Fullstack Development",
+    description:
+      "Building fullstack web applications with React, Next.js, and Node.js, including Server-Side Rendering (SSR) and Static Site Generation (SSG) for high performance.",
+    href: "/contact",
+  },
+  {
+    num: "06",
+    title: "Search Engine Optimization (SEO)",
+    description:
+      "Implementing SEO best practices to improve website visibility in search engine results and drive organic traffic.",
+    href: "/contact",
+  },
 ];
 
 export default services;
