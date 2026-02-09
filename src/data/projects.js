@@ -2,7 +2,27 @@ export const projects = [
   {
     num: "01",
     category: "Fullstack",
-    title: "Project 1",
+    title: "NextPlatform",
+    description: "",
+    stack: [
+      { name: "Typescript" },
+      { name: "NextWeb" },
+      { name: "Material.ui" },
+      { name: "FastAPI" },
+      { name: "NextId" },
+      { name: "WSL" },
+      { name: "VPN" },
+    ],
+    image: "/project/12.png",
+    live: "",
+    live2: true,
+    liveX: "https://learning-course-cyan.vercel.app/sign-in",
+    github: "",
+  },
+  {
+    num: "02",
+    category: "Fullstack",
+    title: "Learning Course",
     description: "",
     stack: [
       { name: "Typescript" },
@@ -23,9 +43,9 @@ export const projects = [
     github: "https://github.com/Garrr555/Learning-Course",
   },
   {
-    num: "02",
+    num: "03",
     category: "Fullstack",
-    title: "Project 2",
+    title: "Project TA",
     description: "",
     stack: [
       { name: "Typescript" },
@@ -43,9 +63,9 @@ export const projects = [
     github: "https://github.com/Garrr555/margasana",
   },
   {
-    num: "03",
+    num: "04",
     category: "Fullstack",
-    title: "Project 3",
+    title: "E-commerce",
     description: "",
     stack: [
       { name: "Typescript" },
@@ -61,9 +81,9 @@ export const projects = [
     github: "https://github.com/Garrr555/Nike",
   },
   {
-    num: "04",
+    num: "05",
     category: "Fullstack",
-    title: "Project 4",
+    title: "Project Internship",
     description: "",
     stack: [
       { name: "Javascript" },
@@ -79,9 +99,9 @@ export const projects = [
     github: "https://github.com/BangOns/capstone-kelompok4",
   },
   {
-    num: "05",
+    num: "06",
     category: "Fullstack",
-    title: "Project 5",
+    title: "Project Internship",
     description: "",
     stack: [
       { name: "Typescript" },
@@ -97,9 +117,9 @@ export const projects = [
     github: "https://github.com/Garrr555/mini-project",
   },
   {
-    num: "06",
+    num: "07",
     category: "Frontend",
-    title: "Project 6",
+    title: "Project Internship",
     description: "",
     stack: [{ name: "Javascript" }, { name: "React.js" }, { name: "Tailwind" }],
     image: "/project/6.png",
@@ -109,9 +129,9 @@ export const projects = [
     github: "https://github.com/Garrr555/Web-Duwit",
   },
   {
-    num: "07",
+    num: "08",
     category: "Frontend",
-    title: "Project 7",
+    title: "Personal Project",
     description: "",
     stack: [
       { name: "Html5" },
@@ -126,9 +146,9 @@ export const projects = [
     github: "",
   },
   {
-    num: "08",
+    num: "09",
     category: "Frontend",
-    title: "Project 8",
+    title: "Personal Project",
     description: "",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/project/4.jpeg",
@@ -138,9 +158,9 @@ export const projects = [
     github: "",
   },
   {
-    num: "09",
+    num: "10",
     category: "Frontend",
-    title: "Project 9",
+    title: "Personal Project",
     description: "",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/project/3.jpeg",
@@ -150,9 +170,9 @@ export const projects = [
     github: "",
   },
   {
-    num: "10",
+    num: "11",
     category: "Frontend",
-    title: "Project 10",
+    title: "Personal Project",
     description: "",
     stack: [
       { name: "Html5" },
@@ -167,9 +187,9 @@ export const projects = [
     github: "",
   },
   {
-    num: "11",
+    num: "12",
     category: "Frontend",
-    title: "Project 11",
+    title: "Personal Project",
     description: "",
     stack: [
       { name: "Html5" },
