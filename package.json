@@ -20,7 +20,7 @@
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.4.2",
     "lucide-react": "^0.475.0",
-    "next": "15.1.6",
+    "next": "^16.1.6",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.1.6",
+    "eslint-config-next": "^16.1.6",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
