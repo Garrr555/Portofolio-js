@@ -23,6 +23,8 @@ import {
   RiFileExcelFill,
 } from "react-icons/ri";
 
+import { TbStack2 , TbStack2Filled, TbHierarchy3} from "react-icons/tb";
+
 export const about = {
   title: "About Me",
   description:
@@ -50,37 +52,37 @@ export const experience = {
     {
       company: "Telkom University",
       position: "Informatics Student",
-      duration: "2021 - 2025",
+      duration: "[June,2021] - [August,2025]",
     },
     {
       company: "Makers Institue",
       position: "Fullstack Developer Intern",
-      duration: "2025 - now",
+      duration: "[August,2025] - [July,2026]",
     },
     {
       company: "Alterra Academy",
       position: "Front-end Developer Intern",
-      duration: "Summer 2024",
+      duration: "[June,2024] - [June,2024]",
     },
     {
       company: "E-commerce",
       position: "Freelance Web Developer",
-      duration: "2023 - 2024",
+      duration: "[2023] - [2024]",
     },
     {
       company: "Blog & News Website",
       position: "Freelance Web Developer",
-      duration: "2024 - 2025",
+      duration: "[2024] - [2025]",
     },
     {
       company: "Web Application",
       position: "Freelance Web Developer",
-      duration: "2024 - 2025",
+      duration: "[2024] - [2025]",
     },
     {
       company: "Portfolio Website",
       position: "Freelance Web Developer",
-      duration: "2023 - 2024",
+      duration: "[2023] - [2024]",
     },
   ],
 };
@@ -132,66 +134,87 @@ export const skills = {
     {
       icon: <FaJs />,
       name: "JavaScript",
+      link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
       icon: <SiTypescript />,
       name: "TypeScript",
+      link: "https://www.typescriptlang.org/",
     },
     {
       icon: <FaReact />,
       name: "React.js",
+      link: "https://react.dev/",
     },
     {
       icon: <SiNextdotjs />,
       name: "Next.js",
+      link: "https://nextjs.org/",
     },
     {
       icon: <SiTailwindcss />,
       name: "Tailwind",
+      link: "https://tailwindcss.com/",
     },
     {
       icon: <RiSupabaseFill />,
       name: "Supabase",
+      link: "https://supabase.com/",
     },
     {
       icon: <FaVuejs />,
       name: "Vue.js",
+      link: "https://vuejs.org/",
+    },
+    {
+      icon: <TbHierarchy3 />,
+      name: "Nextplatform",
+      link: "https://www.nextplatform.ai",
     },
     {
       icon: <FaBootstrap />,
       name: "Bootstrap",
+      link: "https://getbootstrap.com/",
     },
     {
       icon: <FaHtml5 />,
-      name: "html 5",
+      name: "HTML 5",
+      link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
     {
       icon: <FaCss3 />,
-      name: "css 3",
+      name: "CSS 3",
+      link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     },
     {
       icon: <FaNodeJs />,
       name: "Node.js",
+      link: "https://nodejs.org/",
     },
     {
       icon: <SiFirebase />,
       name: "Firebase",
+      link: "https://firebase.google.com/",
     },
     {
       icon: <RiFileWord2Fill />,
       name: "Word",
+      link: "https://www.microsoft.com/microsoft-365/word",
     },
     {
       icon: <RiFilePpt2Fill />,
-      name: "PPT",
+      name: "PowerPoint",
+      link: "https://www.microsoft.com/microsoft-365/powerpoint",
     },
     {
       icon: <RiFileExcelFill />,
       name: "Excel",
+      link: "https://www.microsoft.com/microsoft-365/excel",
     },
     {
       icon: <FaFigma />,
       name: "Figma",
+      link: "https://www.figma.com/",
     },
   ],
 };

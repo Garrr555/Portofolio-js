@@ -25,7 +25,7 @@ export const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Kudus, Jawa Tengah, Indonesia",
-    path: "https://www.google.com/maps/place/Kudus,+Jawa+Tengah,+Indonesia",
+    description: "Kota Bandung, Jawa Barat, Indonesia",
+    path: "https://www.google.com/maps/place/Bandung,+Jawa+Barat,+Indonesia",
   },
 ];

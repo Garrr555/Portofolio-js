@@ -23,10 +23,14 @@ import WorkSliderBtn from "@/components/WorkSliderBtn";
 
 export default function Work() {
   const [project, setProject] = useState(projects[0]);
+  const [index, setIndex] = useState(0);
+
   const handleSlideChange = (swiper) => {
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex]);
+    setIndex(currentIndex);
   };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -41,7 +45,7 @@ export default function Work() {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline flex items-center gap-5">
-                {project.num} <span className="text-6xl">[{project.category}]</span>
+                {index + 1} <span className="text-6xl">[{project.category}]</span>
               </div>
               <h2 className="font-bold leading-none text-white text-[42px] group-hover:text-accent transition-all duration-500 capitalize">
                 {project.title}
