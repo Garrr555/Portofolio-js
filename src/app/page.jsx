@@ -34,14 +34,14 @@ export default function Home() {
       role: "Pengembang Front-end",
       greeting: "Halo, Saya",
       description:
-        "Saya seorang mahasiswa jurusan informatika dari Telkom University yang senang belajar dan memiliki rasa ingin tahu yang tinggi. Saya suka mempelajari hal-hal baru melalui bootcamp online. Saya sering mengerjakan proyek-proyek selama kuliah, misalnya untuk ujian tengah semester, tugas akhir semester atau proyek mandiri. Untuk sekarang saya sudah menguasai React.Js dan Next.Js untuk menambah ilmu dibidang front-end. karena beberapa hal tersebut saya mempunyai kemampuan komunikasi yang baik dan dapat bekerja dalam tim maupun individu.",
+        "seorang Fullstack Developer dengan pengalaman sekitar 1 tahun dalam pengembangan perangkat lunak, dengan spesialisasi pada pengembangan aplikasi web modern. Saya berpengalaman menggunakan TypeScript, React.js, Next.js, Tailwind CSS, Redux Toolkit, Zustand, REST API, FastAPI, Java, Spring Boot, PostgreSQL, dan Git. Saya memiliki pengalaman dalam mengembangkan antarmuka pengguna yang responsif, mengintegrasikan API, membangun layanan backend, serta mengelola database melalui proyek profesional, program magang, dan pengembangan mandiri. Saya merupakan pribadi yang cepat belajar, memiliki kemampuan problem-solving yang baik, serta mampu bekerja secara mandiri maupun kolaboratif dalam tim.",
       buttonText: "Inggris",
     },
     en: {
       role: "Front-end Developer",
       greeting: "Hello, I'm",
       description:
-        "I am an Informatics student at Telkom University who enjoys learning and has a strong curiosity. I love exploring new things through online bootcamps. I often work on projects during my studies, such as mid-term exams, final semester assignments, or independent projects. Currently, I have mastered React.js and Next.js to enhance my knowledge in the front-end field. Due to these experiences, I have good communication skills and can work both in a team and independently.",
+        "as a Fullstack Developer with around 1 years of experience in software development, specializing in modern web application development. Experienced with TypeScript, React.js, Next.js, Tailwind CSS, Redux Toolkit, Zustand, REST APIs, FastAPI, Java, Spring Boot, PostgreSQL, and Git. Experienced in developing responsive user interfaces, integrating APIs, implementing backend services, and managing databases through professional projects, internships, and independent development. A fast learner with strong problem-solving skills who is comfortable working both independently and collaboratively.",
       buttonText: "Indonesian",
     },
   };
