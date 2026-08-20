@@ -22,7 +22,7 @@ export default function Photo() {
           className="w-[298px] h-[298px] mix-blend-lighten xl:w-[498px] xl:h-[498px] absolute"
         >
           <Image
-            src={"/photoAI.png"}
+            src={"/noJasNoBG.png"}
             priority
             quality={100}
             fill
