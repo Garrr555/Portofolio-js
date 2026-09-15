@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import Head from "next/head";
+import AutoLogin from "@/components/AuthLogin";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         <StairTransition />
+        <AutoLogin />
         <PageTransition>{children}</PageTransition>
       </body>
     </html>

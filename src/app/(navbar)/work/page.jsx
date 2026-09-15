@@ -15,21 +15,39 @@ import {
 } from "@/components/ui/tooltip";
 
 import { projects } from "@/data/projects";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Item } from "@radix-ui/react-select";
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtn from "@/components/WorkSliderBtn";
+import CustomFetch from "@/config/db";
 
 export default function Work() {
-  const [project, setProject] = useState(projects[0]);
+  const [events, setEvents] = useState([]);
+  console.log(events);
+
+  // const [project, setProject] = useState(events[0]);
+  // console.log(project);
   const [index, setIndex] = useState(0);
+
+  const project = events[index];
+  console.log(project);
+
+  const getEventByUser = async () => {
+    const response = await CustomFetch.get("/events/user");
+    console.log(response);
+    setEvents(response.data.events);
+  };
 
   const handleSlideChange = (swiper) => {
     const currentIndex = swiper.activeIndex;
-    setProject(projects[currentIndex]);
+    // setProject(events[currentIndex]);
     setIndex(currentIndex);
   };
+
+  useEffect(() => {
+    getEventByUser();
+  }, []);
 
   return (
     <motion.div
@@ -45,25 +63,17 @@ export default function Work() {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline flex items-center gap-5">
-                {index + 1} <span className="text-6xl">[{project.category}]</span>
+                {index + 1} <span className="text-6xl">[Fullstack]</span>
               </div>
               <h2 className="font-bold leading-none text-white text-[42px] group-hover:text-accent transition-all duration-500 capitalize">
-                {project.title}
+                {project?.name}
               </h2>
-              <p className="text-white/60 ">{project.description}</p>
-              <div className="flex gap-4 flex-wrap">
-                {project.stack.map((stack, i) => {
-                  return (
-                    <p key={i} className="text-xl text-accent text-start">
-                      {stack.name}
-                      {i !== project.stack.length - 1 && ","}
-                    </p>
-                  );
-                })}
-              </div>
+              <p className="text-xl text-accent text-start ">
+                {project?.description}
+              </p>
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
+                <Link href={""}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex items-center justify-center group">
@@ -76,8 +86,8 @@ export default function Work() {
                   </TooltipProvider>
                 </Link>
 
-                <div className={`${project.live2 ? "" : "hidden"}`}>
-                  <Link href={project.liveX}>
+                <div className={`${project?.live2 ? "" : "hidden"}`}>
+                  <Link href={""}>
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex items-center justify-center group">
@@ -91,7 +101,7 @@ export default function Work() {
                   </Link>
                 </div>
 
-                <Link href={project.github}>
+                <Link href={""}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex items-center justify-center group">
@@ -113,16 +123,16 @@ export default function Work() {
               onSlideChange={handleSlideChange}
               className="mb-12 xl:h-[520px]"
             >
-              {projects.map((project, i) => {
+              {events.map((project, i) => {
                 return (
                   <SwiperSlide key={i} className="w-full">
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image
-                          src={project.image}
+                          src={project?.image}
                           fill
-                          alt={project.title}
+                          alt={project?.title}
                           className="object-cover"
                         ></Image>
                       </div>
