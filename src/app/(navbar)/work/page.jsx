@@ -34,7 +34,7 @@ export default function Work() {
   console.log(project);
 
   const getEventByUser = async () => {
-    const response = await CustomFetch.get("/events/user");
+    const response = await CustomFetch.get("/events/tag/5");
     console.log(response);
     setEvents(response.data.events);
   };
