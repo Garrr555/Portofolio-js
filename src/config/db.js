@@ -2,6 +2,8 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 const ApiURI = process.env.NEXT_PUBLIC_API_URI;
+const Email = process.env.NEXT_PUBLIC_EMAIL_URI;
+const Password = process.env.NEXT_PUBLIC_PASSWORD_URI;
 
 const CustomFetch = axios.create({
   baseURL: ApiURI + "/api",
@@ -20,8 +22,8 @@ CustomFetch.interceptors.request.use((config) => {
 export const autoLogin = async () => {
   try {
     const response = await CustomFetch.post("/auth/login", {
-      email: "mohammadtegaribrahim@gmail.com",
-      password: "Ibrahim2015!",
+      email: Email,
+      password: Password,
     });
 
     const token = response.data.token;
